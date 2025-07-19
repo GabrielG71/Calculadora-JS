@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #006666, #008080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#content {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+#content h1 {
+  color: #006666;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #009999;
+}
+
+.calculadora {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calculadora tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calculadora td {
+  flex: 1;
+  padding: 5px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #cccccc;
+}
+
+.btn-clear {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.btn-clear:hover {
+  background-color: #e64545;
+}
+
+.btn-del {
+  background-color: #ffa502;
+  color: white;
+}
+
+.btn-del:hover {
+  background-color: #e08e00;
+}
+
+.btn-div,
+.btn-mult,
+.btn-menos,
+.btmais,
+.bt-equal {
+  background-color: #00b894;
+  color: white;
+}
+
+.btn-div:hover,
+.btn-mult:hover,
+.btn-menos:hover,
+.btmais:hover,
+.bt-equal:hover {
+  background-color: #00997a;
+}
+
+.bt-ponto {
+  background-color: #74b9ff;
+  color: white;
+}
+
+.bt-ponto:hover {
+  background-color: #4d94ff;
+}
+
+@media (max-width: 480px) {
+  #content {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  #display {
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
