@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Simples</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Calculadora</h1>
+      <table class="calculadora">
+        <tr>
+          <td><input type="text" id="display" /></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-clear">C</button></td>
+          <td><button class="btn btnum">(</button></td>
+          <td><button class="btn btnum">)</button></td>
+          <td><button class="btn btn-div">/</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btnum">7</button></td>
+          <td><button class="btn btnum">8</button></td>
+          <td><button class="btn btnum">9</button></td>
+          <td><button class="btn btn-mult">X</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btnum">4</button></td>
+          <td><button class="btn btnum">5</button></td>
+          <td><button class="btn btnum">6</button></td>
+          <td><button class="btn btn-menos">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btnum">1</button></td>
+          <td><button class="btn btnum">2</button></td>
+          <td><button class="btn btnum">3</button></td>
+          <td><button class="btn btmais">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btnum">0</button></td>
+          <td><button class="btn bt-ponto">.</button></td>
+          <td><button class="btn btn-del">←</button></td>
+          <td><button class="btn btn-equal">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
